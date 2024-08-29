@@ -11,7 +11,7 @@ package cargame;
  * ====================================================
  * 2024-08-29         lhd
  */
-public class RaceGame {
+public class RaceGameApp {
     public static void main(String[] args) {
 
     }
