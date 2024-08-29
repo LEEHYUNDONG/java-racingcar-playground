@@ -1,7 +1,5 @@
 package cargame.utils;
 
-import cargame.RaceGame;
-
 import java.util.Random;
 
 /**
