@@ -11,7 +11,8 @@ package cargame.car;
  * ====================================================
  * 2024-08-29         lhd
  */
-public class Car {
+public class Car implements Movable {
+    private static final int TARGET_NUM =4;
     private final String owner;
     private int location;
 
@@ -29,19 +30,12 @@ public class Car {
         return location;
     }
 
-    public int carMoveWhenNumIsBiggerThanThree(int num) {
-        if(num < 4){
-            return location;
-        }
-        return ++location;
-    }
-
     public int compareLocation(Car car) {
         return Comparator(this, car);
     }
 
     private static int Comparator(Car a, Car b) {
-        if(a.getLocation() < b.getLocation()) {
+        if (a.getLocation() < b.getLocation()) {
             return 1;
         }
         return 0;
@@ -53,5 +47,13 @@ public class Car {
             res.append("-");
         }
         return res.toString();
+    }
+
+    @Override
+    public int move(int num) {
+        if (num < TARGET_NUM) {
+            return location;
+        }
+        return ++location;
     }
 }

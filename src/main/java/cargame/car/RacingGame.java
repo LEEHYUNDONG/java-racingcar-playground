@@ -48,7 +48,7 @@ public class RacingGame {
 
     private void setGameSets() {
         // 게임 횟수 입력
-        
+
         System.out.println(GAMESET_MESSAGE);
         gameSets = Integer.parseInt(scanner.nextLine());
         System.out.println();
