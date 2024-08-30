@@ -58,7 +58,7 @@ public class RacingGame {
         // 게임 시작
         for (int i = 0; i < gameSets; i++) {
             for (Car car : referee.getCars()) {
-                car.carMoveWhenNumIsBiggerThanThree(RandomNumberGenerator.genereateNumber());
+                car.move(RandomNumberGenerator.genereateNumber());
                 System.out.println(car.getOwner() + " : " + car.printCurrentLocation());
             }
             System.out.println();
