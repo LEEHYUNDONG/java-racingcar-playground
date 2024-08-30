@@ -11,6 +11,11 @@ package cargame.car;
  * ====================================================
  * 2024-08-30         lhd
  */
-public interface Movable {
-    int move(int num);
+public class RandomlyMove implements MovingStrategy{
+    private static final int TARGET_NUM =4;
+
+    @Override
+    public boolean movable(int num) {
+        return num > TARGET_NUM;
+    }
 }

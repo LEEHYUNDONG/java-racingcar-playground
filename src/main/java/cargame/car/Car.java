@@ -11,7 +11,7 @@ package cargame.car;
  * ====================================================
  * 2024-08-29         lhd
  */
-public class Car implements Movable {
+public class Car {
     private static final int TARGET_NUM =4;
     private final String owner;
     private int location;
@@ -49,7 +49,6 @@ public class Car implements Movable {
         return res.toString();
     }
 
-    @Override
     public int move(int num) {
         if (num < TARGET_NUM) {
             return location;
