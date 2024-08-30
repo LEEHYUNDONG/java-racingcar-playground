@@ -38,7 +38,7 @@ public class RacingGame {
         refereePrepareGame();
         setGameSets();
         playGame();
-    }ㅇ
+    }
 
     private void refereePrepareGame() {
         System.out.println(referee.startGame());
