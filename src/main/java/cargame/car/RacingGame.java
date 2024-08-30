@@ -57,12 +57,16 @@ public class RacingGame {
     private void playGame() {
         // 게임 시작
         for (int i = 0; i < gameSets; i++) {
-            for (Car car : referee.getCars()) {
-                car.move(RandomNumberGenerator.genereateNumber());
-                System.out.println(car.getOwner() + " : " + car.printCurrentLocation());
-            }
-            System.out.println();
+            carMoves();
         }
+    }
+
+    private void carMoves() {
+        for (Car car : referee.getCars()) {
+            car.move(RandomNumberGenerator.genereateNumber());
+            System.out.println(car.getOwner() + " : " + car.printCurrentLocation());
+        }
+        System.out.println();
     }
 
     public void printResult() {
