@@ -12,18 +12,17 @@ package cargame.car;
  * 2024-08-29         lhd
  */
 public class Car {
-    private final String userName;
+    private final String owner;
     private int location;
 
-    public Car(String userName) {
-        this.userName = userName;
+    public Car(String owner) {
+        this.owner = owner;
         this.location = 0; // 위치 초기화
-
     }
 
 
-    public String getUserName() {
-        return userName;
+    public String getOwner() {
+        return owner;
     }
 
     public int getLocation() {
@@ -35,5 +34,24 @@ public class Car {
             return location;
         }
         return ++location;
+    }
+
+    public int compareLocation(Car car) {
+        return Comparator(this, car);
+    }
+
+    private static int Comparator(Car a, Car b) {
+        if(a.getLocation() < b.getLocation()) {
+            return 1;
+        }
+        return 0;
+    }
+
+    public String printCurrentLocation() {
+        StringBuilder res = new StringBuilder();
+        for (int i = 0; i < this.location; i++) {
+            res.append("-");
+        }
+        return res.toString();
     }
 }

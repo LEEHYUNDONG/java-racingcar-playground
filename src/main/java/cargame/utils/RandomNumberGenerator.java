@@ -1,7 +1,5 @@
 package cargame.utils;
 
-import cargame.RaceGame;
-
 import java.util.Random;
 
 /**
@@ -16,12 +14,10 @@ import java.util.Random;
  * 2024-08-29         lhd
  */
 public class RandomNumberGenerator {
-    private static final Random random = new Random();
-
-    private RandomNumberGenerator() {}
-
+    private static Random random;
     public static int genereateNumber() {
-        random.setSeed(System.currentTimeMillis());
+        random = new Random();
+        random.setSeed(System.nanoTime());
         return random.nextInt(10);
     }
 }

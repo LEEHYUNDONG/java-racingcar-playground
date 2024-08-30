@@ -26,7 +26,7 @@ public class CarTest {
 
     @Test
     void carCreated() {
-        assertThat(car.getUserName()).isEqualTo("user");
+        assertThat(car.getOwner()).isEqualTo("user");
         assertThat(car.getLocation()).isEqualTo(0);
     }
 
