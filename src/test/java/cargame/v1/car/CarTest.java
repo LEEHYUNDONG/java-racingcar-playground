@@ -1,5 +1,6 @@
-package cargame.car;
+package cargame.v1.car;
 
+import cargame.v1.car.Car;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

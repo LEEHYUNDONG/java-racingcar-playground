@@ -1,4 +1,4 @@
-package cargame.utils;
+package cargame.v1.utils;
 
 import org.junit.jupiter.api.Test;
 

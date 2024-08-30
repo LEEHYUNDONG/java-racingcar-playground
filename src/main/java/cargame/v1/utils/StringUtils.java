@@ -1,8 +1,8 @@
-package cargame;
+package cargame.v1.utils;
 
 /**
  * @author : lhd
- * @packageName : cargame
+ * @packageName : cargame.utils
  * @fileName : java-racingcar-playground
  * @description :
  * <p>
@@ -11,8 +11,6 @@ package cargame;
  * ====================================================
  * 2024-08-29         lhd
  */
-public class RaceGameApp {
-    public static void main(String[] args) {
+public class StringUtils {
 
-    }
 }
