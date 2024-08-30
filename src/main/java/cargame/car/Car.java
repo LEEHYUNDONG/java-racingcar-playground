@@ -46,4 +46,12 @@ public class Car {
         }
         return 0;
     }
+
+    public String printCurrentLocation() {
+        StringBuilder res = new StringBuilder();
+        for (int i = 0; i < this.location; i++) {
+            res.append("-");
+        }
+        return res.toString();
+    }
 }
