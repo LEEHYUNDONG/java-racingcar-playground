@@ -37,7 +37,8 @@ public class RefereeTest {
     void getWinnerList() {
         referee.setCarList("pobi,crong,honux");
         referee.getCars().get(0).carMoveWhenNumIsBiggerThanThree(5);
-        assertThat(referee.getWinnerList()).isEqualTo(Arrays.asList("pobi"));
+        referee.getCars().get(1).carMoveWhenNumIsBiggerThanThree(5);
+        assertThat(referee.getWinnerList()).isEqualTo(Arrays.asList("pobi", "crong"));
     }
 
 
