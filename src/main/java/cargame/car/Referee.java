@@ -30,4 +30,7 @@ public class Referee {
         return cars.stream().filter(m -> m.getLocation()==max.get()).map(Car::getOwner).collect(Collectors.toList());
     }
 
+    public String endGame() {
+        return "";
+    }
 }
